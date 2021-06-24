@@ -6,6 +6,10 @@
 
 Build OpenWrt using GitHub Actions
 
+includes Hello World plugin
+
+.config File is copied from [https://github.com/ch1993128/openwrt-r8000](https://github.com/ch1993128/openwrt-r8000)
+
 [Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
 ## Usage
