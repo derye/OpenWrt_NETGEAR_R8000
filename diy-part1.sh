@@ -18,4 +18,4 @@
 
 cd package/lean/
 
-https://github.com/xiaorouji/openwrt-passwall.git
+git clone https://github.com/xiaorouji/openwrt-passwall.git
