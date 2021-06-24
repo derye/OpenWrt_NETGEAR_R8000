@@ -16,12 +16,16 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
-cd lede/package/lean/  
+git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
+git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
+git clone https://github.com/rosywrt/luci-theme-rosy
+git clone https://github.com/openwrt-develop/luci-theme-atmaterial
+git clone https://github.com/openwrt-dev/po2lmo.git
+pushd po2lmo
+make && sudo make install
+popd
 
+cd openwrt/package/lean/  
 git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
-
 git clone https://github.com/jerrykuku/luci-app-vssr.git  
 
-make menuconfig
-
-make -j1 V=s
